@@ -1,0 +1,32 @@
+mysql=> my stracture Query language
+
+students (Data Table) (id,name,roll,class,phone,email,address)
+teacher (Data Table) (id,name,designation,phone,email,address)
+staffs (Data Table) (id,name,email,phone,department,salary,status,address)
+
+======crud=====
+
+c= create
+r= read
+u= update
+d= delete
+
+========SQL=======
+
+create->
+INSERT INTO students (name, roll, class, phone, email, address) VALUES('Anjam', 4, 'Six', '01XXXXXXXXXXX', 'anjam09@gmail.com', 'Nasirabad,Ctg');
+
+READ->
+SELECT * FROM students; ---jodi sob data dekhte cay *mane holo all data
+SELECT name FROM students;
+SELECT id,name,email FROM students;
+SELECT * FROM students WHERE id=3;
+SELECT * FROM students WHERE class='six';
+
+UPDATE=>
+
+UPDATE students SET roll=12 WHERE id=4;
+UPDATE students SET name='Md.Ryal', roll=45, class='Nine', phone='018xxxxxxxx', email='ryal98@gmail.com', address='New market,Ctg' WHERE id=1;
+
+INSERT INTO skills (skills_name,percentage)VALUES ('Java script','85%');
+INSERT INTO projects (project_name,description,image)VALUES ('Portfolio Website','A personal portfolio website to showcase projects and skills.','portfolio.jpg');
